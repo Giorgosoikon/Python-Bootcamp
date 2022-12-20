@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Course
+    </title>
+    <link rel="stylesheet" type="text/css" href="../css/styles2.css">
+</head>
+
+
+<h1>Add Course</h1>
+
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="Coursepage.html">Course</a>
+  <a href="Trainerpage.html">Trainer</a>
+  <a href="Studentpage.html">Student</a>
+  <a href="Assignmentpage.html">Assignment</a>
+  <div class="animation start-home"></div>
+</nav>
+
+
+<body>
+<br><br><br><br>
+ <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Course Title*</label><label class="validation-error hide" id="coursetitleValidationError">This field is required.</label>
+                        <label class="validation-error hide" id="coursetitleoverflowError">This field is max_characters 10.</label>
+                        <label class="validation-error hide" id="coursetitlenumericError">This field is characters only.</label>
+                        <label class="validation-error hide" id="coursetitlespecialcharError">Special characters are not allowed.</label>
+                        <input type="text" name="coursetitle" id="coursetitle">
+                    </div>
+                    <div>
+                        <label>Course Language</label>
+                        <input type="text" name="courselanguage" id="courselanguage">
+                    </div>
+                    <div>
+                        <label>Description</label>
+                        <input type="text" name="description" id="description">
+                    </div>
+                    <div>
+                        <label>Type</label>
+                        <input type="text" name="type" id="type">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="List">
+                    <thead>
+                        <tr>
+                            <th>Course title</th>
+                            <th>Course language</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="../scripts/scriptC.js"></script>
+
+
+<div class='footer'>
+  Created by Giorgos Oikonomakis
+</div>
+</body>
+
+
+</html>

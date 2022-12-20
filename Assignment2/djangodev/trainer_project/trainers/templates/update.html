@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class='container mt-3' >
+
+    <h4>Update Trainer</h4>
+    <br>
+    <form action='' method="POST">
+    {% csrf_token %}
+        <div class='form-group'>
+            <label for=''>First Name</label>
+            <input type='text' name='first_name' value="{{ trainer.first_name }}" class = 'form-control'>
+        </div>
+        <div class='form-group'>
+            <label for=''>Last Name</label>
+            <input type='text' name='last_name' value="{{ trainer.last_name }}" class = 'form-control'>
+        </div>
+        <div class='form-group'>
+            <label for=''>Subject</label>
+            <input type='text' name='subject' value="{{ trainer.subject }}" class = 'form-control'>
+        </div><br>
+        <div class='form-group'>
+            <button class='btn btn-primary' type='submit'>Update Record</button>
+            <a href="{% url 'show' %}" class = 'btn btn-info'>Trainer's List</a>
+        </div>
+    
+    </form>
+
+
+
+</div>
+
+
+{% endblock content %}

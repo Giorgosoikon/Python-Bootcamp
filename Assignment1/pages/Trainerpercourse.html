@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Trainer per Course
+    </title>
+    <link rel="stylesheet" href="../css/styles2.css">
+</head>
+
+
+<h1>Add Trainer per Course</h1>
+
+<nav>
+  <a href="../index.html">Home</a>
+  <a href="Coursepage.html">Course</a>
+  <a href="Trainerpage.html">Trainer</a>
+  <a href="Studentpage.html">Student</a>
+  <a href="Assignmentpage.html">Assignment</a>
+  <div class="animation start-home"></div>
+</nav>
+
+
+<body>
+<br><br><br><br>
+ <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>First Name*</label><label class="validation-error hide" id="firstnameValidationError">This field is required.</label>
+                        <label class="validation-error hide" id="firstnameeoverflowError">This field is max_characters 10.</label>
+                        <label class="validation-error hide" id="firstnamenumericError">This field is characters only.</label>
+                        <label class="validation-error hide" id="firstnamespecialcharError">Special characters are not allowed.</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                    <div>
+                        <label>Last Name*</label><label class="validation-error hide" id="lastnameValidationError">This field is required.</label>
+                        <label class="validation-error hide" id="lastnameeoverflowError">This field is max_characters 10.</label>
+                        <label class="validation-error hide" id="lastnamenumericError">This field is characters only.</label>
+                        <label class="validation-error hide" id="lastnamespecialcharError">Special characters are not allowed.</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+                    <div>
+                        <label>Subject</label>
+                        <input type="text" name="subject" id="subject">
+                    </div>
+                     <div>
+                        <label>Course</label>
+                        <input type="text" name="course" id="course">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="List">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Subject</th>                            
+                            <th>Course</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="../scripts/scriptTC.js"></script>
+
+
+<div class='footer'>
+  Created by Giorgos Oikonomakis.
+</div>
+</body>
+
+
+</html>
